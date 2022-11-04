@@ -148,6 +148,18 @@ body {
     opacity: 0.702;
 }
 
+.srch-button{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/search.png) center no-repeat;
+    transition: .5s ease all;
+}
+
+.srch-button:hover{
+    background: url(../img/search-blue.png);
+}
+
 .header-card {
     display: block;
     margin-right: 25px;
