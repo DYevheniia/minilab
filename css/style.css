@@ -64,6 +64,11 @@ body {
     display: inline-block;
 }
 
+.obversely{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
 .obversely:hover {
     padding: 16px 35px 16px 15px;
     margin: -16px -15px;
@@ -135,6 +140,7 @@ body {
 }
 
 .srch input {
+    outline: none;
     padding: 9px 30px 9px 15px;
     color: #262626;
     font-size: 15px;
@@ -258,7 +264,7 @@ body {
     background: url(../img/slider-tablet.jpg) center / cover no-repeat;
 }
 
-.slider p:nth-child(1) {
+.slider h2 {
     margin-bottom: 20px;
     color: #fff;
     font-size: 46px;
@@ -471,7 +477,7 @@ main h1 {
     padding: 50px 0;
 }
 
-.social-block p {
+.social-block h3 {
     margin-bottom: 20px;
     color: #262626;
     font-size: 15px;
