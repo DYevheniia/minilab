@@ -2,6 +2,10 @@ body {
     margin: 0;
     font-family: "Segoe UI";
 }
+@font-face {
+    font-family: "Segoe UI";
+    src: url(fonts/segoe-ui-4-cufonfonts.zip);
+}
 
 /* The upper part of the site */
 .header-line-wrap {
