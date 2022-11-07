@@ -4,7 +4,7 @@ body {
 }
 @font-face {
     font-family: "Segoe UI";
-    src: url(fonts/segoe-ui-4-cufonfonts.zip);
+    src: url(../fonts/SegoeUI.ttf) format("ttf");
 }
 
 /* The upper part of the site */
