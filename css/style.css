@@ -2,10 +2,29 @@ body {
     margin: 0;
     font-family: "Segoe UI";
 }
+
+
 @font-face {
-    font-family: "Segoe UI";
-    src: url(../fonts/SegoeUI.ttf) format("ttf");
+    font-family: 'Segoe UI';
+    src: url('../fons/SegoeUI-Bold.woff2') format('woff2'),
+        url('../fons/SegoeUI-Bold_1.woff') format('woff'),
+        url('../fons/SegoeUI-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fons/SegoeUI_1.woff2') format('woff2'),
+        url('../fons/SegoeUI_1.woff') format('woff'),
+        url('../fons/SegoeUI_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 /* The upper part of the site */
 .header-line-wrap {
@@ -68,7 +87,7 @@ body {
     display: inline-block;
 }
 
-.obversely{
+.obversely {
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
 }
@@ -122,8 +141,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 /* Profile */
 .profile {
     display: flex;
@@ -136,7 +153,7 @@ body {
     justify-content: space-between;
     margin-right: 25px;
     padding: 10px 15px 10px 0;
-    width: 264px;
+    width: 270px;
     height: 38px;
     border: 1px solid #999999;
     box-sizing: border-box;
@@ -144,23 +161,23 @@ body {
 
 .srch input {
     outline: none;
-    padding: 9px 30px 9px 15px;
+    padding: 9px 0 9px 15px;
+    width: 210px;
     color: #262626;
     font-size: 15px;
     border: none;
     opacity: 0.702;
 }
 
-.srch-button{
-    display: inline-block;
+.srch a {
     width: 15px;
     height: 15px;
-    background: url(../img/search.png) center no-repeat;
-    transition: .5s ease all;
+    background: url(../img/spryte.png) no-repeat;
 }
 
-.srch-button:hover{
-    background: url(../img/search-blue.png);
+.srch a:hover {
+    background: url(../img/spryte.png) no-repeat;
+    background-position: -17px 0;
 }
 
 .header-card {
@@ -168,12 +185,13 @@ body {
     margin-right: 25px;
     width: 18px;
     height: 15px;
-    background: url(../img/card.png) center no-repeat;
-    transition: .5 s ease;
+    background: url(../img/spryte.png) no-repeat;
+    background-position: -34px 0;
 }
 
 .header-card:hover {
-    background: url(../img/card-blue.png) center no-repeat;
+    background: url(../img/spryte.png) no-repeat;
+    background-position: -54px 0;
 }
 
 .exit {
@@ -587,10 +605,14 @@ footer {
 }
 
 .lang a::before {
-    content: url(../img/lang.png);
+    content: "";
     position: absolute;
     top: 10%;
     left: 0px;
+    width: 14px;
+    height: 14px;
+    background: url(../img/spryte.png) no-repeat;
+    background-position: -74px 0;
 }
 
 .lang p {
